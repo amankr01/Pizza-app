@@ -2,11 +2,29 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   scrollbar-width: none;
+   text-decoration: none;
 }
-
+*::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+a{
+    color: white;
+}
+li{
+    list-style: none;
+}
 .xflex{
    display: flex;
    align-items: center;
+}
+header{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(231, 48, 48);
 }
 .head{
    width: 100vw;
@@ -20,6 +38,7 @@
    border-radius: 5px;
    gap: 5px;
    padding: 5px 0;
+   background-color: white;
 }
 .logo{
    padding: 5px;
@@ -62,22 +81,53 @@
    white-space: nowrap;
 }
 
-.menu-options div{
+.menu-options .options{
    flex: 0 0 auto;
    height: 60px;
    width: 60px;
-   background: red;
    border: none;
-   border-radius: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.options .Mimg{
+    width: 45px;
+    height: 45px;
+    margin-bottom: 1px;
+}
+.Mimg img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.options .mname{
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  color: #333;
+}
+
+.xdiv{
+    width: 100vw;
+    margin-top: 50px;
 }
 
 /*-------*/
 .hero-img{
    width: 100vw;
    height: 200px;
-   background: red;
+   background: rgb(231, 48, 48);
+   border-radius: 0 0 10px 10px;
+   padding: 10px;
 }
-
+.hero-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(40, 2, 2), 0 0 8px rgb(145, 46, 46);
+}
 /*---------*/
 .xitem{
    width: 100vw;
@@ -91,20 +141,32 @@
    flex:0 0 auto;
    height: 165px;
    width: 115px;
-   background : green;
+   background : rgb(235, 250, 223);
    padding: 5px;
    border: none;
    border-radius: 5px;
 }
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+}
+
 .card .img-box{
    width: 100%;
    height: 50%;
-   background: darkred;
+   background: white;
+}
+.card .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .card .about{
    position: relative;
    width: 100%;
    height: 50%;
+   text-wrap: wrap;
 }
 .price-addbtn{
    display: inline-flex;
@@ -116,5 +178,72 @@
 }
 .price-addbtn button{
    padding: 5px 8px;
-   background: darkgreen;
+   background: rgb(36, 179, 36);
+   border: 1px solid rgb(9, 91, 9);
+   border-radius: 5px;
+}
+
+
+/* great */
+.great{
+    width: 100%;
+    padding: 10px;
+    
+}
+.great h1{
+    color: #cdc8c8;
+}
+
+
+
+
+/* footer */
+footer{
+    width: 100vw;
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: #fc6d6d;
+}
+
+.foot1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px ;
+}
+.foot1 .links{
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+}
+.foot2{
+    padding: 10px;
+    padding-bottom: 25px;
+}
+.copyrgt{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+@media (min-width: 768px) {
+    .xitem {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+    .head-search .search-box input {
+        width: 300px;
+    }
 }
