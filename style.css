@@ -1,5 +1,7 @@
 *{
+
    margin: 0;
+
    padding: 0;
    box-sizing: border-box;
    scrollbar-width: none;
@@ -24,13 +26,13 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgb(231, 48, 48);
+    background-color: rgba(216, 82, 51, 1);
 }
 .head{
    width: 100vw;
-   padding: 10px;
+   padding: 15px 10px 15px 10px;
    justify-content: space-between;
-   height: 50px;
+   height: 60px;
 }
 
 .head-search{
@@ -77,22 +79,23 @@ header{
    width: 100vw;
    height: 80px;
    gap: 10px;
-   padding: 10px;
+   padding: 15px 10px 10px 10px;
    white-space: nowrap;
 }
 
 .menu-options .options{
    flex: 0 0 auto;
-   height: 60px;
+   height: 120px;
    width: 60px;
    border: none;
    display: flex;
    flex-direction: column;
    align-items: center;
+   background: none;
 }
 .options .Mimg{
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     margin-bottom: 1px;
 }
 .Mimg img{
@@ -101,7 +104,7 @@ header{
     object-fit: contain;
 }
 .options .mname{
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
   text-align: center;
   color: #333;
@@ -109,16 +112,16 @@ header{
 
 .xdiv{
     width: 100vw;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 /*-------*/
 .hero-img{
    width: 100vw;
    height: 200px;
-   background: rgb(231, 48, 48);
+   background: rgba(216, 82, 51, 1);
    border-radius: 0 0 10px 10px;
-   padding: 10px;
+   padding: 5px 10px 10px 10px;
 }
 .hero-img img{
     height: 100%;
@@ -187,8 +190,8 @@ header{
 /* great */
 .great{
     width: 100%;
-    padding: 10px;
-    
+    padding: 20px;
+    text-align: center;
 }
 .great h1{
     color: #cdc8c8;
