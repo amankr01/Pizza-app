@@ -4,7 +4,20 @@
   box-sizing: border-box;
   scrollbar-width: none;
   text-decoration: none;
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', 'Arial', sans-serif;
 }
+
+:root {
+  --primary-color: rgba(32, 104, 176, 1);
+  --secondary-color: rgba(216, 82, 51, 1);
+  --card-color: rgba(235, 250, 223, 1);
+  --font-main: 'Poppins', sans-serif;
+  --radius: 8px;
+  --shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+
 *::-webkit-scrollbar {
   width: 0;
   height: 0;
@@ -24,7 +37,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(216, 82, 51, 1);
+  background-color: var(--primary-color);
 }
 .head {
   width: 100vw;
@@ -60,9 +73,12 @@ header {
 .head-menu {
   gap: 16px;
 }
-.head-menu div {
+.head-menu div i{
   font-size: 19px;
   color: #fff;
+}
+#xmark{
+  font-size: 22px ;
 }
 
 /* ========== CATEGORY MENU ========== */
@@ -75,7 +91,7 @@ header {
   gap: 10px;
   padding: 10px;
   white-space: nowrap;
-  background: rgba(216, 82, 51, 1);
+  background: var(--primary-color);
   border-radius: 0 0 10px 10px;
 }
 
@@ -98,14 +114,14 @@ header {
 .options.focus,
 #all.focus {
   background: #fff;
-  border: 2px solid rgba(216, 82, 51, 1);
+  border: 2px solid var(--primary-color);
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
 }
 .options.focus .mname,
 #all.focus .mname {
-  color: rgba(216, 82, 51, 1);
+  color: var(--primary-color);
   font-weight: bold;
 }
 
@@ -140,7 +156,7 @@ header {
 .hero-img {
   width: 100vw;
   height: 200px;
-  background: rgba(216, 82, 51, 1);
+  background: var(--primary-color);
   padding: 5px 10px 10px 10px;
 }
 .hero-img img {
@@ -149,6 +165,39 @@ header {
   object-fit: cover;
   border: none;
   border-radius: 10px;
+}
+
+/* drop-down*/
+.dropdown {
+  width: 40vw;
+  position: fixed;
+  right: 10px;
+  top: 60px; /* Adjust according to your layout */
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 100;
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown ul li {
+  margin: 10px 0;
+}
+
+.dropdown ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.hidden {
+  display: none;
 }
 
 /* ========== ITEM CARDS ========== */
@@ -164,7 +213,7 @@ header {
   flex: 0 0 auto;
   height: 165px;
   width: 115px;
-  background: rgb(235, 250, 223);
+  background: var(--card-color) ;
   padding: 5px;
   border: none;
   border-radius: 10px;

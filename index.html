@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-
 <html>
-
-
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +10,9 @@
    <meta name="theme-color" content="rgba(216, 82, 51, 1)" />
    <title>pizza.com</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <!--inter font awesome link cdn -->
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+   
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -32,10 +32,25 @@
          <div class="head-menu xflex">
             <div><i class="fa-solid fa-bell"></i></div>
             <div><i class="fa-solid fa-bag-shopping"></i></div>
-            <div><i class="fa-solid fa-bars"></i></div>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
          </div>
       </div>
     </header>
+    
+
+<!-- Dropdown content -->
+<div class="dropdown hidden" id="dropdown">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Menu</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</div>
+    
+    
 <!-- ------------------------------------------------- -->
     <div class="xdiv"></div>
 <!-- ----------------------------------------- -->
@@ -88,9 +103,7 @@
     </div>
 
 <!-- ==================================== -->
-   <div class="xitem xflex" id="items">
-      
-   </div>
+   <div class="xitem xflex" id="items"> </div>
 <!-- ************************************************* -->
    <div class="great">
     <h1>LIVE FOR FOOD!</h1>
@@ -98,7 +111,7 @@
    </div>
 
 <!-- footer -->
-    <footer>
+    <footer class="footer">
         <div class="foot1">
             <h1>pizza.com</h1>
             <div class="links">
@@ -123,81 +136,10 @@
             <p><a href="">copyright © 2025 - All rights Reserved </a></p>
         </div>
     </footer>
-
+   
    
    <script src="script.js"></script>
    <script src="data.js"></script>
    <!--<s>shsbsj</s>-->
 </body>
 </html>
-
-
-<!--<div class="card">
-         <div class="img-box">
-            <img src="pizza/pizza5.jpeg" alt="">
-         </div>
-         
-         <div class="about">
-            <p>garlic cheese bread</p>
-            <div class="xflex price-addbtn">
-               <p>$89</p>
-               <button type="button">+</button>
-            </div>
-         </div>
-      </div>
-      
-      <div class="card">
-         <div class="img-box">
-            <img src="pizza/pizza 1.jpg" alt="">
-         </div>
-         
-         <div class="about">
-            <p>Tomato stuff pizza</p>
-            <div class="xflex price-addbtn">
-               <p>$100</p>
-               <button type="button">+</button>
-            </div>
-         </div>
-      </div>
-      
-      <div class="card">
-         <div class="img-box">
-            <img src="pizza/pizza3.jpeg" alt="">
-         </div>
-         
-         <div class="about">
-            <p>dobule cheese pizza</p>
-            <div class="xflex price-addbtn">
-               <p>$99</p>
-               <button type="button">+</button>
-            </div>
-         </div>
-      </div>
-      
-      <div class="card">
-         <div class="img-box">
-            <img src="pizza/pizza4.jpeg" alt="">
-         </div>
-         
-         <div class="about">
-            <p>tomato chesse pizza</p>
-            <div class="xflex price-addbtn">
-               <p>$40</p>
-               <button type="button">+</button>
-            </div>
-         </div>
-      </div>
-      
-      <div class="card">
-         <div class="img-box">
-            <img src="pizza/pizza5.jpeg" alt="">
-         </div>
-         
-         <div class="about">
-            <p>simple garlic bread</p>
-            <div class="xflex price-addbtn">
-               <p>$70</p>
-               <button type="button">+</button>
-            </div>
-         </div>
-      </div>-->
