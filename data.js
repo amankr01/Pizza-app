@@ -2,7 +2,7 @@ const inventory = [
   {
     type: 'veg',
     items: [
-      { img: 'assets/veg1.webp', name: 'Fresh Green Capsicum', price: 100 },
+      { img: './assets/veg1.webp', name: 'Fresh Green Capsicum', price: 100 },
       { img: 'assets/veg2.jpg', name: 'Juicy Red Tomato', price: 105 },
       { img: 'assets/veg3.jpg', name: 'Crispy Sliced Onion', price: 110 },
       { img: 'assets/veg4.jpg', name: 'Sweet Golden Corn', price: 115 },
